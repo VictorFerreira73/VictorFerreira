@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Upload this file to your GitHub repository -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="200" viewBox="0 0 400 200">
+  <style>
+    .segment {
+      fill: #7ee787;
+      animation: move 3s infinite ease-in-out;
+    }
+    .segment-1 { animation-delay: 0s; }
+    .segment-2 { animation-delay: 0.1s; }
+    .segment-3 { animation-delay: 0.2s; }
+    .segment-4 { animation-delay: 0.3s; }
+    .head { animation-delay: 0.4s; }
+    
+    @keyframes move {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      25% { transform: translateY(-20px) rotate(5deg); }
+      50% { transform: translateY(0) rotate(0deg); }
+      75% { transform: translateY(20px) rotate(-5deg); }
+    }
+  </style>
+  
+  <circle class="segment segment-1" cx="80" cy="100" r="20" />
+  <circle class="segment segment-2" cx="120" cy="100" r="20" />
+  <circle class="segment segment-3" cx="160" cy="100" r="20" />
+  <circle class="segment segment-4" cx="200" cy="100" r="20" />
+  
+  <path class="segment head" d="M240,80 a20,20 0 0,1 0,40 a20,20 0 0,1 -20,-20 a20,20 0 0,1 20,-20 z" />
+  <circle cx="230" cy="100" r="5" fill="#0d1117" />
+</svg>
